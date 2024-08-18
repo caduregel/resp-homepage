@@ -1,1 +1,1 @@
-import style from 's'
+import './style.css'
