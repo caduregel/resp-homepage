@@ -1,17 +1,11 @@
-# odin-template
-Template project for The Odin Project.
+# Responsive Homepage Template
+A responsive home page made to study more advanced HTML and CSS concepts
 
 ## Includes:
 
-### Webpack setup
-* HTML web Plugin
-* webpack.config.js folder
+* Transforms 
 
-### Jest
-* ./tests folder
-* jest.config.js config folder
-
-## Deplaying Dist to Pages
+## Deploying Dist to Pages
 ### Step one
 Remove the dist directory from the project’s .gitignore file (it’s ignored by default by Yeoman).
 ### Step two
