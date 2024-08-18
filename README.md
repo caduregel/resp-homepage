@@ -3,7 +3,8 @@ A responsive home page made to study more advanced HTML and CSS concepts
 
 ## Includes:
 
-* Transforms 
+* Transforms
+* Transitions
 
 ## Deploying Dist to Pages
 ### Step one
