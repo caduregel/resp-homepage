@@ -1,0 +1,32 @@
+#workshop_info {
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    padding-bottom: 30px;
+}
+
+#workshop_content {
+    margin-top: 20px;
+    grid-column: 3 / 8;
+}
+
+#workshop_content > h1{
+    color: #666666;
+    font-weight: bolder;
+}
+
+#workshop_content > p, #workshop_content > ul > li {
+    color: #575757;
+}
+#workshop_content > h2 {
+    color: #c696b4;
+}
+
+
+
+@media (max-width: 1165px) {
+    #workshop_info {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+}
