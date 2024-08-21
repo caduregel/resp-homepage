@@ -23,8 +23,12 @@ header {
 #logo {
     height: 125px;
     width: 125px;
+    object-fit: cover;
     margin-right: 25px;
     border-radius: 100%;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
     background-color: white;
 }
 
