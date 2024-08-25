@@ -2,6 +2,9 @@ import './header.css'
 import './main_title.css'
 import './workshop.css'
 import './contact.css'
+import logo from'./logo.jpeg'
+
+document.querySelector('#logo').src = logo
 
 let clicked = false
 document.querySelector('.dropbtn').addEventListener('click', () => {
