@@ -73,7 +73,7 @@ input[type=submit]:hover {
 
 .boxed_form {
     background-color: #c696b4;
-    
+
     color: white;
     padding: 15px;
     border-radius: 15px;
@@ -87,13 +87,11 @@ input[type=submit]:hover {
         padding: 20px;
     }
 
-#contact_formulier  {
-    width: 75vw;
-}
+    #contact_formulier {
+        width: 75vw;
+    }
 
     .boxed_form {
-        background-color: #c696b4;
-        color: white;
         padding: 15px;
         border-radius: 15px;
         margin: 0 auto;
