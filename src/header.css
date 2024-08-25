@@ -10,13 +10,17 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 35px 0px 35px 0px;
+    padding: 35px 35px 35px 35px;
     background-color: #c696b4;
 }
 
-
+.flex-row-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 /* Logo, name, and title */
 
@@ -68,19 +72,19 @@ header {
     flex-direction: column;
     align-items: center;
     max-height: 125px;
-    margin: 0px 25px 0px 0px;
+    margin: 30px  25px 0px 0px;
     cursor: pointer;
     caret-color: transparent;
 }
 
 .nav_item>svg {
-    max-height: 88px;
+    max-height: 50px;
 }
 
 .nav_item>h3 {
-    color: #646464;
+    color: #fff;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 16px;
     margin: 0px;
 }
 

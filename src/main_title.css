@@ -1,50 +1,75 @@
 #main_title {
     display: grid;
-    background-color: #ffbbe6;
+    background-color: #ffdaf1;
     color: #3a3a3a;
-    grid-template-columns: repeat(5, 20vw);
-    padding: 20px 0px 20px 0px;
-    box-shadow: 0px 10px 5px #ffbbe6;
+    grid-template-columns: repeat(10, 10vw);
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0px 10px 5px #ffdaf1;
 }
 
 /* assign the juiste boxes */
 .main_content {
-    grid-column: 2 / 4;
+    grid-column: 2 / 8;
+    display: flex;
+    align-items: center;
+    height: 540px;
 }
 
-.boxed {
-    grid-column: 4/5;
-}
 
 /* Main content van de bovenste division */
 .main_content>div>h2 {
     font-weight: normal;
-    font-size: 20px;
+    font-size: 27px;
+    margin: 0;
 }
 
-.main_content>button {
+.main_content>div>h1 {
+    font-weight: bolder;
+    font-size: 45px;
+    margin: 0px 0px 10px 0px;
+}
+
+#vraag_nu {
     color: white;
     font-size: 25px;
     width: 450px;
     height: 70px;
     background-color: #ec407a;
+    margin: 35px 0px 0px 0px;
     border: none;
-    border-radius: 20px;
+    box-shadow: 4px 4px 3px #c696b4;
+    border-radius: 10px;
 }
 
-.main_content>button:hover {
+#vraag_nu:hover {
     cursor: pointer;
     filter: brightness(0.9);
 }
 
 /* Box styling */
 
+.fixed {
+    position: fixed;
+    margin-left: 1000px;
+    top: 0;
+}
+
 .boxed {
+    grid-column: 8/10;
     background-color: #c696b4;
     color: white;
-    padding: 15px;
-    border-radius: 15px;
-    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px;
+    width: 324px;
+    max-height: 472px;
+    box-shadow: 0 0 10px #3a3a3a;
+    transition: transform 0.3s;
+}
+
+.boxed:hover {
+    transform: scale(1.1);
+    background-color: #ec407a;
 }
 
 .boxed>h4 {
@@ -64,14 +89,52 @@
         padding: 20px;
     }
 
-    .main_content>button {
-        color: white;
-        font-size: 15px;
-        width: 250px;
-        height: 40px;
-        background-color: #ec407a;
-        border: none;
-        border-radius: 20px;
+    .main_content {
+        height: none;
+        max-height: 200px;
+        margin: 20px 0;
     }
 
+    .boxed {
+        margin: 0 auto
+    }
+
+    .boxed:hover {
+        transform: none;
+        background-color: #c696b4;
+    }
+
+    .main_content>div>h2 {
+        font-size: 20px;
+    }
+
+    .main_content>div>h1 {
+        font-size: 30px;
+    }
+
+    .title_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #vraag_nu {
+        color: white;
+        font-size: 20px;
+        max-width: 300px;
+        max-height: 45px;
+        padding: 10px;
+        background-color: #ec407a;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .grid-title-container {
+        display: block;
+    }
+
+    .boxed {
+        margin-top: 50px;
+        position: relative;
+    }
 }
